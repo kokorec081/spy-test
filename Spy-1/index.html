@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            display: none;
+        }
+        #card {
+            display: none;
+            background-image:url(https://www.shutterstock.com/image-vector/vector-green-matrix-eye-background-260nw-2235180101.jpg);
+            width: 300px;
+            margin: 0 auto;
+            padding: 50px 5px;
+            margin-top: 30px;
+            border-radius: 20px;
+        }
+        #error {
+            color: red;
+            display: none;
+        }
+
+        #new {
+            display: none;
+            width: 150px;
+            height: 50px;
+            margin-top: 20px;
+            background-color:forestgreen;
+            color: white;
+            border-radius: 15px;
+            border: none;
+            font-size: 15px;
+            
+        }
+
+        .lang {
+            height: 20px;
+            text-align: left;
+            padding-left: 25px;
+            padding-top: 18px;
+            
+
+        }
+        #lang {
+            color: white;
+            width: 100px;
+            height: 30px;
+            background: linear-gradient(black,green);
+            border-radius: 20px;
+
+            
+        }
+        #h1{
+            color: white;
+        }
+        #button{
+            background-color:forestgreen;
+            color:white;
+        }
+        #box {
+            border-radius: 100px;
+        }
+    </style>
+</head>
+
+<body style="text-align: center; background-image: url(https://i.makeagif.com/media/8-30-2023/kgqEqp.gif);background-size: cover;">
+    <button onclick="window.location.reload();" id="new">New Game!</button>
+    <div class="lang">
+        <select name="" id="lang">
+            <option value="EN">EN</option>
+            <option value="AZ">AZ</option>
+            <option value="RU">RU</option>
+        </select>
+    </div>
+    <div id="box">
+        <img width="300" src=" https://upload.wikimedia.org/wikipedia/en/1/17/GameSpy_-_Official_Logo.png" alt="">
+        <br>
+        <input id="count" style="padding: 20px;" type="number">
+        <p id="error">- 3 den az ve 100den cox oyuncu olmur, dur tullan</p>
+        <br>
+        <button id="start" onclick="start()" style="background-color: white; color: green; border: none; border-radius: 8px; padding: 15px 25px; margin-top: 20px;">Start</button>
+        <br>
+        <button id="select" onclick="select()" class="btn" style="background-color: white; color: forestgreen; border: none; border-radius: 8px; padding: 25px 35px; margin-top: 20px; font-size: 20px;">Select</button>
+
+    
+        <div id="card">
+
+            <h1 id="h1"></h1>
+            <button onclick="hide()" id="button" style="font-size: 16px; border: none; padding: 10px; border-radius: 8px;">Hide</button>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
